@@ -1,0 +1,25 @@
+header {
+  background-color: var(--bg-light);
+  padding: 0 2em;
+  height: 10vh;
+}
+
+.link-header {
+  color: var(--color-black);
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+.link-header:hover {
+  color: var(--txt-light);
+  text-decoration: none;
+}
+
+.pe-none {
+  color: var(--bg-dark);
+}
+
+.number-item-cart {
+  font-size: 0.8em;
+  color: var(--color-black);
+}

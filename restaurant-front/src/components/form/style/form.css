@@ -1,0 +1,36 @@
+form {
+   background-color: var(--bg-yellow);
+   box-shadow: var(--box-shadow-red);
+}
+
+form h3 {
+   color: var(--color-black);
+}
+
+input:hover {
+   box-shadow: var(--box-shadow-red);
+}
+
+.errors {
+   color: var(--color-black);
+   font-size: 0.8rem;
+}
+
+.btn-form {
+   background-color: var(--color-black);
+   color: var(--bg-yellow);
+}
+
+.btn-form:hover {
+   background-color: var(--color-black);
+   color: var(--bg-yellow);
+   box-shadow: var(--box-shadow-red);
+}
+
+.btn-change {
+   background-color: var(--bg-light);
+}
+
+.btn-change:hover {
+   background-color: var(--bg-light);
+}

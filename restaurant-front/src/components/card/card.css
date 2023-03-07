@@ -1,0 +1,13 @@
+.card {
+   margin: 3em;
+   box-shadow: var(--box-shadow-red);
+   background-color: var(--bg-yellow);
+   transition-duration: 0.3s;
+}
+
+.grow {
+   width: 28%;
+   transition-duration: 0.4s;
+   box-shadow: var(--box-shadow-white);
+   margin: 1.5em 3em;
+}

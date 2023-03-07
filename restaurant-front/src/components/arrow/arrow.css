@@ -1,0 +1,7 @@
+.arrow {
+   position: fixed;
+   bottom: 10vh;
+   right: 5vw;
+   color: var(--bg-dark);
+   cursor: pointer;
+}

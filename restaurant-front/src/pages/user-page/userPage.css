@@ -1,0 +1,7 @@
+.btn-logout {
+   background-color: var(--bg-light);
+}
+
+.btn-logout:hover {
+   background-color: var(--bg-light);
+}
