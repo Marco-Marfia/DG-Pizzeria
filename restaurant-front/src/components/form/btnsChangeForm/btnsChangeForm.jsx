@@ -1,3 +1,4 @@
+import '../style/form.css'
 import { useContext } from "react"
 import { FormContext } from "../../../contexts/contexts"
 
