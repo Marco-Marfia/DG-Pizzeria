@@ -1,0 +1,16 @@
+.border-cart {
+   color: var(--color-grey);
+}
+
+#btn-remove {
+   background-color:var(--red-dark);
+}
+
+#btn-remove:hover {
+   color: var(--colo-black)
+}
+
+.btn-menu:hover {
+   background-color: transparent;
+   color: white;
+}

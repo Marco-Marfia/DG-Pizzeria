@@ -1,5 +1,5 @@
 header {
-  background-color: var(--bg-light);
+  background-color: var(--color-grey);
   padding: 0 2em;
   height: 10vh;
 }
@@ -11,12 +11,12 @@ header {
 }
 
 .link-header:hover {
-  color: var(--txt-light);
+  color: var(--red-light);
   text-decoration: none;
 }
 
 .pe-none {
-  color: var(--bg-dark);
+  color: var(--red-light);
 }
 
 .number-item-cart {

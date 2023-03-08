@@ -2,6 +2,10 @@
    position: fixed;
    bottom: 10vh;
    right: 5vw;
-   color: var(--bg-dark);
+   color: var(--red-dark);
    cursor: pointer;
+}
+
+.arrow:hover {
+   color: var(--red-light);
 }

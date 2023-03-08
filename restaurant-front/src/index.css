@@ -9,24 +9,22 @@ ul {
 }
 
 :root {
-   --bg-light: #FF2E00;
-   --bg-dark: #8F1A00;
-   --bg-yellow: #FEA82F;
-   --box-shadow-red: 0 0 20px rgba(255, 0, 0, 0.6);
+   --color-grey: #cdcbd6;
+   --red-light: #d96846;
+   --red-dark: #f06846;
    --box-shadow-white: 0 0 10px rgba(255, 255, 255, 1);
-   --color-black: #1C1F22;
-   --txt-light: #FFFECB;
+   --color-black: #0d1b2a;
 }
 
 ::-webkit-scrollbar {
-   width: 1vw;
+   width: 0.7vw;
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color: var(--bg-dark);
+   background-color: var(--red-light);
    border-radius: 10rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-   background-color: var(--bg-light);
+   background-color: var(--red-dark);
 }

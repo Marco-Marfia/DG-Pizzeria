@@ -1,7 +1,11 @@
 .btn-logout {
-   background-color: var(--bg-light);
+   background-color: var(--red-light);
 }
 
 .btn-logout:hover {
-   background-color: var(--bg-light);
+   background-color: var(--red-light);
+}
+
+.number-order {
+   color: var(--red-dark);
 }

@@ -1,6 +1,5 @@
 form {
-   background-color: var(--bg-yellow);
-   box-shadow: var(--box-shadow-red);
+   background-color: var(--red-dark);
 }
 
 form h3 {
@@ -8,7 +7,7 @@ form h3 {
 }
 
 input:hover {
-   box-shadow: var(--box-shadow-red);
+   box-shadow: var(--box-shadow-white);
 }
 
 .errors {
@@ -16,21 +15,20 @@ input:hover {
    font-size: 0.8rem;
 }
 
-.btn-form {
+#btn-form {
    background-color: var(--color-black);
-   color: var(--bg-yellow);
+   color: var(--red-dark);
 }
 
-.btn-form:hover {
+#btn-form:hover {
    background-color: var(--color-black);
-   color: var(--bg-yellow);
-   box-shadow: var(--box-shadow-red);
+   color: var(--red-dark);
 }
 
 .btn-change {
-   background-color: var(--bg-light);
+   background-color: var(--color-grey);
 }
 
 .btn-change:hover {
-   background-color: var(--bg-light);
+   background-color: var(--red-light);
 }
