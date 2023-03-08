@@ -2,15 +2,20 @@
    color: var(--color-grey);
 }
 
-#btn-remove {
+.btn-remove {
    background-color:var(--red-dark);
 }
 
-#btn-remove:hover {
-   color: var(--colo-black)
+.btn-remove:hover {
+   background-color:var(--red-dark);
+   color: var(--color-black)
 }
 
 .btn-menu:hover {
    background-color: transparent;
+   color: white;
+}
+
+.btn-add:hover {
    color: white;
 }
