@@ -41,7 +41,7 @@ export const UserPage = () => {
                {allOrders.map(order => {
                   return (
                      <div className="w-25 my-5 border border-warning p-3 rounded mx-3" key={order.id}>
-                        <h4 className="text-danger">{order.id}</h4>
+                        <h4 className="number-order">{order.id}</h4>
 
                         <ul className='ps-0'>
                            {order.foods.map((food, i) => {

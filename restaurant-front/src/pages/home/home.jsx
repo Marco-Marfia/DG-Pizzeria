@@ -13,7 +13,7 @@ export const Home = () => {
    return (
       <>
             <section className='section-home m-5'>
-               <img className='img-restaurant' src="/src/assets/img/sfondo-home.png" alt="delivery pizza" />
+               <img className='img-restaurant' src="/src/assets/img/sfondo-home.jpg" alt="delivery pizza" />
             </section>
 
             <section className='section-form d-flex flex-column justify-content-center align-items-center'>

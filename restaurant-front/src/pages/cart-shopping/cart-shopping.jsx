@@ -1,3 +1,4 @@
+import './cart-shopping.css'
 import { useContext } from 'react'
 import { FaCartPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -43,21 +44,21 @@ export const CartShopping = () => {
                   { totalPrice += el.price }
                   return (
 
-                     <li key={i} className='w-100 row my-4 align-items-center border rounded border-warning p-2'>
+                     <li key={i} className='w-100 row my-4 align-items-center border rounded border-cart p-2'>
                         <span className='col-4'>
                            <img src={el.imgPath} alt={el.name} className='w-75 rounded' />
-                           <h3>{el.name}</h3>
-                           <button onClick={() => [removeNumberHeader(numberHeader), removeItem(i)]} className="btn btn-outline-danger">remove</button>
+                           <h3 className='text-white'>{el.name}</h3>
+                           <button onClick={() => [removeNumberHeader(numberHeader), removeItem(i)]} className="btn btn-remove" id='btn-remove'>remove</button>
                         </span>
-                        <p className='col-3 d-flex justify-content-center'>{el.price.toFixed(2)} &#8364;</p>
-                        <p className='col-5 d-flex justify-content-center'>{el.description}</p>
+                        <p className='col-3 d-flex justify-content-center text-white'>{el.price.toFixed(2)} &#8364;</p>
+                        <p className='col-5 d-flex justify-content-center text-white'>{el.description}</p>
                      </li>
                   )
                })}
                <h4 className='mt-5'>total price: {totalPrice.toFixed(2)} &#8364;</h4>
                {logged ?
-                  <Link className='btn btn-outline-info' to={'/pay'} onClick={() => saveOrder()}>acquista</Link> :
-                  <Link className='btn btn-outline-info' to={'/home'} onClick={() => toFormLogin()}>acquista</Link>
+                  <Link className='btn btn-outline-light' to={'/pay'} onClick={() => saveOrder()}>acquista</Link> :
+                  <Link className='btn btn-outline-light' to={'/home'} onClick={() => toFormLogin()}>acquista</Link>
                }
             </ul>
             :
@@ -67,7 +68,7 @@ export const CartShopping = () => {
                <div className='my-5 fs-1'>
                   <FaCartPlus />
                </div>
-               <Link className='btn btn-outline-warning' to={'/menu'}>menu</Link>
+               <Link className='btn btn-menu btn-outline-warning' to={'/menu'}>menu</Link>
             </div>
          }
       </>

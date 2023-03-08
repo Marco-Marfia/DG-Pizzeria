@@ -37,7 +37,7 @@ export const Card = () => {
                      <h5 className="card-title ">{el.name}</h5>
                      <h6 className="card-subtitle text-dark mb-2">{el.price.toFixed(2)}&#8364;</h6>
                      <p className="card-text text-dark">{el.description}</p>
-                     <button onClick={() => [setNumberHeader(numberHeader + 1), itemsInCart(el)]} className="btn btn-success">aggiungi</button>
+                     <button onClick={() => [setNumberHeader(numberHeader + 1), itemsInCart(el)]} className="btn btn-add">aggiungi</button>
                   </div>
 
                </div>
