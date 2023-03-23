@@ -42,5 +42,5 @@ export const useUserForm = (url, body, setLogged, setUserData) => {
             console.error('Errore: ' + error);
          })
    }
-   sendDataUser();
+   sendDataUser(url, body, setLogged, setUserData);
 }
