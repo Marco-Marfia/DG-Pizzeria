@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import lombok.extern.slf4j.Slf4j;
 import restaurant.restaurantback.model.User;
 import restaurant.restaurantback.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("/api/restaurant/user")
 @CrossOrigin("http://localhost:5173")
+@Slf4j
 public class UserController {
 
    @Autowired
@@ -43,7 +46,7 @@ public class UserController {
    @PostMapping("/login")
    public ResponseEntity<User> userLogin(@RequestBody User user) {
       User userEmail = userService.getUserByEmail(user.getEmail());
-
+      //log.info("UTENTE " + userEmail);
       if (userEmail != null && userEmail.getPassword().equals(user.getPassword()))
          return new ResponseEntity<>(userEmail, HttpStatus.OK);
 
@@ -52,6 +55,7 @@ public class UserController {
 
    @PostMapping("/create")
    public ResponseEntity<User> createUser(@RequestBody User user) {
+      log.info("UTENTE " + user);
       if (userService.createUser(user) == null)
          return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 

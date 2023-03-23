@@ -4,10 +4,13 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import lombok.extern.slf4j.Slf4j;
 import restaurant.restaurantback.model.User;
 import restaurant.restaurantback.repository.UserRepository;
 
 @Service
+@Slf4j
 public class UserService {
 
    @Autowired
@@ -56,7 +59,7 @@ public class UserService {
    /* create */
    public User createUser(User user) {
       User userEmail = userRepository.findUserByEmail(user.getEmail());
-
+      log.info("SERVICE " + userEmail);
       if (userEmail != null)
          return null;
 
